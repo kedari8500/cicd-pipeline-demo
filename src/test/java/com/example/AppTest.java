@@ -1,11 +1,11 @@
 package com.example;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 class AppTest {
     @Test
-    void addWorks() {
-        assertEquals(5, App.add(2, 3));
+    void greetingContainsName() {
+        assertTrue(App.greet("Kedar").contains("Kedar"));
     }
 }
