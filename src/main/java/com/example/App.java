@@ -14,7 +14,7 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(9090), 0);
-        server.createContext("/", ex -> send(ex, greet("World")));
+        server.createContext("/", ex -> send(ex, greet("Kedari")));
         server.createContext("/health", ex -> send(ex, "OK"));
         server.start();
         System.out.println("Server running on http://localhost:9090");
